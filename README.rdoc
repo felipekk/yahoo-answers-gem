@@ -1,6 +1,41 @@
-= yahoo-answers-gem
+= yahoo-answers
 
-Description goes here.
+Github Project:
+http://github.com/felipekk/yahoo-answers-gem
+
+== Requirements
+
+This gem requires Eric Hodel and David N. Welton's yahoo gem:
+
+http://github.com/davidw/yahoo-gem
+
+Also check out their Yahoo Web Search and Yahoo Location Search gem:
+
+http://github.com/davidw/yahoo-search-gem
+
+== Description
+
+This is a simple implementation of version 1 of Yahoo! Answers API. It allows you to search Yahoo! Answers, returning
+the questions found and it's answers.
+
+== Using Yahoo::Answers
+
+First you'll need a Yahoo Application ID.  You can register for one here:
+
+http://api.search.yahoo.com/webservices/register_application
+
+Then simply create a Yahoo::Answers object with your API Key and start searching for answers:
+
+    require 'rubygems'
+    require 'yahoo/answers'
+
+    ya = Yahoo::Answers.new api_key
+
+    results = ys.search(:query => 'cars')
+
+    results.each do |result|
+        puts result.inspect
+    end
 
 == Note on Patches/Pull Requests
  
