@@ -24,7 +24,9 @@ Gem::Specification.new do |s|
      "Rakefile",
      "VERSION",
      "lib/yahoo/answers.rb",
-     "test/helper.rb"
+     "test/helper.rb",
+     "test/test_answers.rb",
+     "yahoo-answers.gemspec"
   ]
   s.homepage = %q{http://github.com/felipekk/yahoo-answers-gem}
   s.rdoc_options = ["--charset=UTF-8"]
